@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flower Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #4CAF50;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .flower-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .flower-card:hover {
+      transform: scale(1.03);
+    }
+
+    .flower-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .flower-info {
+      padding: 15px;
+    }
+
+    .flower-info h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .flower-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🌼 Flower Gallery</h1>
+
+  <div class="gallery">
+
+    <div class="flower-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Rose_Flower_Pink.jpg/640px-Rose_Flower_Pink.jpg" alt="Rose">
+      <div class="flower-info">
+        <h2>Rose</h2>
+        <p><strong>Description:</strong> Symbol of love and beauty.</p>
+        <p><strong>Care Tips:</strong> Needs full sun and well-drained soil. Water regularly.</p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Tulip_-_floriade_canberra.jpg" alt="Tulip">
+      <div class="flower-info">
+        <h2>Tulip</h2>
+        <p><strong>Description:</strong> A spring-blooming bulbous flower.</p>
+        <p><strong>Care Tips:</strong> Prefers sunny locations and sandy soil. Water moderately.</p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Sunflower_sky_backdrop.jpg" alt="Sunflower">
+      <div class="flower-info">
+        <h2>Sunflower</h2>
+        <p><strong>Description:</strong> Known for turning toward the sun.</p>
+        <p><strong>Care Tips:</strong> Requires full sun, lots of water, and fertile soil.</p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/White_lily_flower.jpg" alt="Lily">
+      <div class="flower-info">
+        <h2>Lily</h2>
+        <p><strong>Description:</strong> Elegant flowers, often fragrant.</p>
+        <p><strong>Care Tips:</strong> Needs partial sunlight and moist, well-drained soil.</p>
+      </div>
+    </div>
+
+    <div class="flower-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Orchid_flower.jpg" alt="Orchid">
+      <div class="flower-info">
+        <h2>Orchid</h2>
+        <p><strong>Description:</strong> Exotic and delicate flowering plant.</p>
+        <p><strong>Care Tips:</strong> Prefers indirect light and high humidity. Avoid overwatering.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
